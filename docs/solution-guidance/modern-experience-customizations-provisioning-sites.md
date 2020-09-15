@@ -352,11 +352,13 @@ If you don't want to allow users to create a "classic" subsite under a "modern" 
 
 ![Subsite Creation options from the SharePoint Online admin UI](media/modern-experiences/subsite-creation-admin-setting.png)
 
-### Sites are not listed in the classic SharePoint Admin UI / Tenant API
+### Finding sites in the Modern SharePoint Admin UI / Tenant API
 
-"Modern" team sites are not visible in the SharePoint admin UI. You can access the list of "modern" team sites from the Microsoft 365 groups admin user interface under Office 365 admin portal. SharePoint Online admin user interface only list "classic" SharePoint sites. This same limitation does not apply to the tenant API: you can use this API to enumerate "modern" team sites together with "classic" team sites. To obtain a list of only "modern" team sites, you can also use the Groups endpoint from Microsoft Graph API.
+The new SharePoint Admin UI that supports managing new "modern" site collections together with "classic" ones has been released to general availability.
 
-There is also an upcoming new SharePoint Admin UI, which supports managing the new "modern" site collections, together with the "classic" ones.
+A list of "Modern" team sites can be accessed from the list of Active sites in the modern SharePoint admin UI by filtering by template and choosing Team site.  This will show you all "modern" team sites created in your tenant including ones associated with Microsoft Teams.
+
+You can also access the list of "modern" team sites from the Microsoft 365 groups admin user interface under Office 365 admin portal. The tenant API can also be used to enumerate "modern" team sites together with "classic" team sites. To obtain a list of only "modern" team sites, you can also use the Groups endpoint from Microsoft Graph API.
 
 ## See also
 
